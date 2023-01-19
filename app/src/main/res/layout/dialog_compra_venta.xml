@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7CA658">
+
+    <TextView
+        android:id="@+id/textViewDispComprarFCV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/disponible"
+        android:textColor="#263238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComprarFCV" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/totalVender"
+        android:labelFor="@id/editTextTotalVenderFCV"
+        android:text="@string/totalFCV"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTotalVenderFCV"
+        app:layout_constraintStart_toStartOf="@+id/textViewDispComprarFCV2"
+        app:layout_constraintTop_toTopOf="@+id/editTextTotalVenderFCV" />
+
+    <TextView
+        android:id="@+id/textViewBalanceIdFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="#263238"
+        app:layout_constraintStart_toEndOf="@+id/textViewDispComprarFCV2"
+        app:layout_constraintTop_toTopOf="@+id/textViewDispComprarFCV2" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cantidadVender"
+        android:labelFor="@id/editTextCantidadVenderFCV"
+        android:text="@string/cantidadFCV"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCantidadVenderFCV"
+        app:layout_constraintStart_toStartOf="@+id/textViewDispComprarFCV2"
+        app:layout_constraintTop_toTopOf="@+id/editTextCantidadVenderFCV" />
+
+    <EditText
+        android:id="@+id/editTextCantidadVenderFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#263238"
+        app:layout_constraintStart_toStartOf="@+id/textViewBalanceIdFCV"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDispComprarFCV2" />
+
+    <Button
+        android:id="@+id/buttonVenderFCV"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/venderFCV"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTotalVenderFCV" />
+
+    <TextView
+        android:id="@+id/textViewSignoCantidadFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCantidadVenderFCV"
+        app:layout_constraintStart_toEndOf="@+id/editTextCantidadVenderFCV"
+        app:layout_constraintTop_toTopOf="@+id/editTextCantidadVenderFCV" />
+
+    <EditText
+        android:id="@+id/editTextTotalVenderFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#263238"
+        app:layout_constraintStart_toStartOf="@+id/editTextCantidadVenderFCV"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCantidadVenderFCV" />
+
+    <TextView
+        android:id="@+id/textViewSignoTotalFCV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTotalVenderFCV"
+        app:layout_constraintStart_toEndOf="@+id/editTextTotalVenderFCV"
+        app:layout_constraintTop_toTopOf="@+id/editTextTotalVenderFCV" />
+
+    <TextView
+        android:id="@+id/textViewSignoDispVenderFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="TextView"
+        android:textColor="#263238"
+        app:layout_constraintStart_toEndOf="@+id/textViewBalanceIdFCV"
+        app:layout_constraintTop_toTopOf="@+id/textViewBalanceIdFCV" />
+
+    <TextView
+        android:id="@+id/textViewSignoFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#263238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUsdFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/USD"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#263238"
+        app:layout_constraintStart_toEndOf="@+id/textViewSignoFCV"
+        app:layout_constraintTop_toTopOf="@+id/textViewSignoFCV" />
+
+    <TextView
+        android:id="@+id/textViewPrecioFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#263238"
+        app:layout_constraintStart_toEndOf="@+id/textViewUsdFCV"
+        app:layout_constraintTop_toTopOf="@+id/textViewUsdFCV" />
+
+    <TextView
+        android:id="@+id/textViewDollarCabeceraFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#263238"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrecioFCV"
+        app:layout_constraintTop_toTopOf="@+id/textViewPrecioFCV" />
+
+    <TextView
+        android:id="@+id/textViewDispComprarFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/disponible"
+        android:textColor="#263238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignoFCV" />
+
+    <TextView
+        android:id="@+id/textViewBalanceUsdFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="#263238"
+        app:layout_constraintStart_toEndOf="@+id/textViewDispComprarFCV"
+        app:layout_constraintTop_toTopOf="@+id/textViewDispComprarFCV" />
+
+    <TextView
+        android:id="@+id/textViewDollarDispCompraFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="$"
+        android:textColor="#263238"
+        app:layout_constraintStart_toEndOf="@+id/textViewBalanceUsdFCV"
+        app:layout_constraintTop_toTopOf="@+id/textViewBalanceUsdFCV" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cantidadComprar"
+        android:labelFor="@id/editTextCantidadComprarFCV"
+        android:text="@string/cantidadFCV"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCantidadComprarFCV"
+        app:layout_constraintStart_toStartOf="@+id/textViewDispComprarFCV"
+        app:layout_constraintTop_toTopOf="@+id/editTextCantidadComprarFCV" />
+
+    <EditText
+        android:id="@+id/editTextCantidadComprarFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#263238"
+        app:layout_constraintStart_toStartOf="@+id/textViewBalanceUsdFCV"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDispComprarFCV" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextCantidadComprarFCV"
+        app:layout_constraintStart_toEndOf="@+id/editTextCantidadComprarFCV"
+        app:layout_constraintTop_toTopOf="@+id/editTextCantidadComprarFCV" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/totalComprar"
+        android:labelFor="@id/editTextTotalComprarFCV"
+        android:text="@string/totalFCV"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTotalComprarFCV"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/editTextTotalComprarFCV" />
+
+    <EditText
+        android:id="@+id/editTextTotalComprarFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#263238"
+        app:layout_constraintStart_toStartOf="@+id/editTextCantidadComprarFCV"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCantidadComprarFCV" />
+
+    <TextView
+        android:id="@+id/textViewSignoTotalFCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#263238"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTotalComprarFCV"
+        app:layout_constraintStart_toEndOf="@+id/editTextTotalComprarFCV"
+        app:layout_constraintTop_toTopOf="@+id/editTextTotalComprarFCV" />
+
+    <Button
+        android:id="@+id/buttonComprarFCV"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/comprarFCV"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTotalComprarFCV" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDispComprarFCV2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComprarFCV"
+        app:srcCompat="@drawable/layout_filapar" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDispComprarFCV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSignoFCV"
+        app:srcCompat="@drawable/layout_filapar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disponibleParaComprar"
+        android:textColor="#455A64"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disponibleParaVender"
+        android:textColor="#455A64"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

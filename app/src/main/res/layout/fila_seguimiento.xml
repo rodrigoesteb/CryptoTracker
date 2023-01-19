@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_border">
+
+    <ImageView
+        android:id="@+id/imageSimbol"
+        android:layout_width="@android:dimen/notification_large_icon_width"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCampanaNotif"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textNombreMoneda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/imageSimbol"
+        app:layout_constraintStart_toEndOf="@+id/imageSimbol" />
+
+    <TextView
+        android:id="@+id/textPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoText="false"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textSimboloFiat"
+        app:layout_constraintTop_toTopOf="@+id/textSimboloMoneda" />
+
+    <TextView
+        android:id="@+id/textSimboloFiat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="$"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textSimboloMoneda" />
+
+    <TextView
+        android:id="@+id/textSimboloMoneda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageSimbol"
+        app:layout_constraintTop_toTopOf="@+id/imageSimbol" />
+
+    <TextView
+        android:id="@+id/textViewPorcentajeFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="% 7d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSimboloFiat" />
+
+    <TextView
+        android:id="@+id/textViewPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPorcentajeFinal"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPorcentajeFinal" />
+
+    <ImageView
+        android:id="@+id/imageViewPorcentaje"
+        android:layout_width="?android:attr/listPreferredItemPaddingStart"
+        android:layout_height="?android:attr/listPreferredItemPaddingStart"
+        android:background="@android:drawable/arrow_up_float"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:backgroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewPorcentaje"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPorcentaje" />
+
+    <ImageView
+        android:id="@+id/imageViewCampanaNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/ic_popup_reminder"
+        android:backgroundTint="@color/purple_500"
+        android:backgroundTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

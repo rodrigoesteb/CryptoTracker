@@ -1,0 +1,57 @@
+<resources>
+    <item type="id" name="TAG_ID"/>
+    <item type="id" name="TAG_SIMBOLO"/>
+    <item type="id" name="TAG_CANTIDAD"/>
+    <item type="id" name="TAG_PRECIO"/>
+
+    <string name="app_name">Crypto Tracker</string>
+    <string name="aprende">Aprende</string>
+    <string name="lista_seguimiento">Lista Seguimiento</string>
+    <string name="simulador_trading">Simulador Trading</string>
+    <string name="buscar_simbolo">Buscar símbolo</string>
+    <string name="acceso_internet">La App requiere acceso a Internet para poder funcionar correctamente.</string>
+    <string name="acceso_notificaciones">La App requiere acceso a Notificaciones para usar esta función.</string>
+    <string name="entendido">Entendido!</string>
+    <string name="btn_add">Añadir</string>
+    <string name="notif_sube">Notificar si sube de:</string>
+    <string name="notif_baja">Notificar si baja de:</string>
+    <string name="btn_guardar">GUARDAR</string>
+    <string name="btn_quitar_seguimiento">QUITAR SEGUIMIENTO</string>
+    <string name="btn_salir">SALIR</string>
+    <string name="velocidad_actualizacion">Intervalo Actualización</string>
+    <string name="horas24">24 horas</string>
+    <string name="horas12">12 horas</string>
+    <string name="hora1">1 hora</string>
+    <string name="min30">30 minutos</string>
+    <string name="min15">15 minutos</string>
+    <string name="noActualizar">No Actualizar</string>
+    <string name="volver">volver</string>
+    <string name="notif_titulo">Actualización de precios</string>
+    <string name="activar">Activar</string>
+
+    <string name="balance">BALANCE TOTAL:</string>
+    <string name="signo">SIGNO</string>
+    <string name="precio_usd">PRECIO $</string>
+    <string name="cantidad">CANTIDAD</string>
+    <string name="total_usd">TOTAL $</string>
+    <string name="ver_historial">Ver Historial</string>
+
+    <string name="disponible">Disponible:</string>
+    <string name="cantidadFCV">Cantidad:</string>
+    <string name="totalFCV">Total:</string>
+    <string name="comprarFCV">COMPRAR</string>
+    <string name="venderFCV">VENDER</string>
+    <string name="cantidadComprar">cantidad a comprar</string>
+    <string name="totalComprar">total a coprar</string>
+    <string name="cantidadVender">cantidad a vender</string>
+    <string name="totalVender">total a vender</string>
+    <string name="disponibleParaComprar">DISPONIBLE PARA COMPRAR</string>
+    <string name="disponibleParaVender">DISPONIBLE PARA VENDER</string>
+
+    <string name="total">TOTAL</string>
+    <string name="fecha">FECHA</string>
+    <string name="oper">OPER.</string>
+    <string name="compra">COMPRA</string>
+    <string name="venta">VENTA</string>
+
+</resources>
